@@ -165,7 +165,7 @@ namespace ConexionEF.Controllers
             await _userManager.RemoveFromRoleAsync(usuario, MyConstants.RolAdmin);
 
             return RedirectToAction("List",
-                routeValues: new { confirmed = "", remove = "Rol removido correctamente a " + email });
+                routeValues: new { remove = "Rol removido correctamente a " + email });
         }
     }
 }
